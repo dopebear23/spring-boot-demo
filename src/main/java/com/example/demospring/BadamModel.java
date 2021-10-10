@@ -24,6 +24,7 @@ public class User {
 	public int getUser_cash() {
 		return user_cash;
 	}
+	
 	public void setUser_cash(int user_cash) {
 		this.user_cash = user_cash;
 	}
