@@ -17,4 +17,9 @@ public class SayHelloController {
         return new SayHello(counter.incrementAndGet(), String.format(TEMPLATE, nick));
     }
 
+     @GetMapping("/sayNamaste")
+    public SayNamaste sayNamaste(@RequestParam(value = "person", defaultValue = "person") String person) {
+        return new SayNamaste(counter.incrementAndGet(), String.format(TEMPLATE, person));
+    }
+
 }
