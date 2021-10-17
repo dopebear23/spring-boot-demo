@@ -1,11 +1,11 @@
 package com.example.demospring;
 
-public class SayNamaste {
+public class SayKonnichiwa {
 
     private final long id;
     private final String content;
 
-    public SayNamaste(long id, String content) {
+    public SayKonnichiwa(long id, String content) {
         this.id = id;
         this.content = content;
     }
