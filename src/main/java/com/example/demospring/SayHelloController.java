@@ -22,4 +22,9 @@ public class SayHelloController {
         return new SayNamaste(counter.incrementAndGet(), String.format(TEMPLATE, person));
     }
 
+    @GetMapping("/sayKonnichiwa")
+    public SayKonnichiwa sayKonnichiwa(@RequestParam(value = "name", defaultValue = "name") String name) {
+        return new SayKonnichiwa(counter.incrementAndGet(), String.format(TEMPLATE, name));
+    }
+
 }
